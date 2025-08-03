@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Fullstack para Principiantes - Conviértete en Desarrollador Web</title>
+    <meta name="description" content="Aprende desarrollo web fullstack desde cero. HTML, CSS, JavaScript, Node.js, React y más. Curso completo para principiantes.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <i class="fas fa-code"></i>
+                    <span>FullStack Pro</span>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#curso" class="nav-link">Curso</a></li>
+                    <li><a href="#beneficios" class="nav-link">Beneficios</a></li>
+                    <li><a href="#testimonios" class="nav-link">Testimonios</a></li>
+                    <li><a href="#precios" class="nav-link">Precios</a></li>
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
+                </ul>
+                <a href="#precios" class="btn-primary">Inscríbete Ahora</a>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-star"></i>
+                    <span>Curso #1 en Desarrollo Web</span>
+                </div>
+                <h1 class="hero-title">
+                    Conviértete en un 
+                    <span class="gradient-text">Desarrollador Fullstack</span>
+                    desde cero, en universidad de Cataluna
+                </h1>
+                <p class="hero-description">
+                    Aprende las tecnologías más demandadas del mercado: HTML, CSS, JavaScript, React, Node.js y MongoDB. 
+                    De principiante a profesional en 6 meses.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <strong>2,500+</strong>
+                        <span>Estudiantes</span>
+                    </div>
+                    <div class="stat">
+                        <strong>4.9/5</strong>
+                        <span>Rating</span>
+                    </div>
+                    <div class="stat">
+                        <strong>85%</strong>
+                        <span>Empleabilidad</span>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <a href="#precios" class="btn-primary btn-large">
+                        <i class="fas fa-play"></i>
+                        Comenzar Ahora
+                    </a>
+                    <a href="#curso" class="btn-secondary">
+                        <i class="fas fa-info-circle"></i>
+                        Ver Temario
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="code-window">
+                    <div class="window-header">
+                        <div class="window-controls">
+                            <span class="control red"></span>
+                            <span class="control yellow"></span>
+                            <span class="control green"></span>
+                        </div>
+                        <span class="window-title">app.js</span>
+                    </div>
+                    <div class="code-content">
+                        <pre><code class="typing-animation">
+const developer = {
+  name: 'Tu Nombre',
+  skills: ['HTML', 'CSS', 'JavaScript'],
+  experience: 'Junior Developer',
+  salary: '$45,000+'
+};
+
+console.log('¡Futuro desarrollador!');
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beneficios Section -->
+    <section class="benefits" id="beneficios">
+        <div class="container">
+            <div class="section-header">
+                <h2>¿Por qué elegir nuestro curso?</h2>
+                <p>Metodología probada que ha ayudado a miles de estudiantes a conseguir su primer empleo en tech</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card" data-aos="fade-up">
+                    <div class="benefit-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Desde Cero a Profesional</h3>
+                    <p>No necesitas experiencia previa. Te enseñamos todo lo que necesitas saber para convertirte en desarrollador fullstack.</p>
+                </div>
+                <div class="benefit-card" data-aos="fade-up" data-delay="100">
+                    <div class="benefit-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3>Proyectos Reales</h3>
+                    <p>Construirás un portafolio completo con 5+ proyectos reales que podrás mostrar a empleadores.</p>
+                </div>
+                <div class="benefit-card" data-aos="fade-up" data-delay="200">
+                    <div class="benefit-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Comunidad Activa</h3>
+                    <p>Únete a nuestra comunidad de +2,500 estudiantes y recibe apoyo cuando lo necesites.</p>
+                </div>
+                <div class="benefit-card" data-aos="fade-up" data-delay="300">
+                    <div class="benefit-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Preparación Laboral</h3>
+                    <p>Te ayudamos a preparar tu CV, portafolio y entrevistas técnicas para conseguir tu primer empleo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curso Content -->
+    <section class="course-content" id="curso">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contenido del Curso</h2>
+                <p>Currículo completo diseñado por expertos de la industria</p>
+            </div>
+            <div class="modules-container">
+                <div class="module" data-aos="fade-right">
+                    <div class="module-number">01</div>
+                    <div class="module-content">
+                        <h3>Fundamentos Web</h3>
+                        <p>HTML5, CSS3, Responsive Design, Git & GitHub</p>
+                        <ul>
+                            <li>Estructura y semántica HTML5</li>
+                            <li>Diseño responsive con CSS Grid y Flexbox</li>
+                            <li>Control de versiones con Git</li>
+                            <li>Despliegue en GitHub Pages</li>
+                        </ul>
+                        <span class="module-duration">4 semanas</span>
+                    </div>
+                </div>
+                <div class="module" data-aos="fade-left">
+                    <div class="module-number">02</div>
+                    <div class="module-content">
+                        <h3>JavaScript Moderno</h3>
+                        <p>ES6+, DOM, APIs, Programación Asíncrona</p>
+                        <ul>
+                            <li>Sintaxis moderna de JavaScript</li>
+                            <li>Manipulación del DOM</li>
+                            <li>Fetch API y AJAX</li>
+                            <li>Promises y Async/Await</li>
+                        </ul>
+                        <span class="module-duration">6 semanas</span>
+                    </div>
+                </div>
+                <div class="module" data-aos="fade-right">
+                    <div class="module-number">03</div>
+                    <div class="module-content">
+                        <h3>React & Frontend</h3>
+                        <p>React, Hooks, Context API, React Router</p>
+                        <ul>
+                            <li>Componentes y JSX</li>
+                            <li>Estado y ciclo de vida</li>
+                            <li>Hooks modernos</li>
+                            <li>Enrutamiento con React Router</li>
+                        </ul>
+                        <span class="module-duration">8 semanas</span>
+                    </div>
+                </div>
+                <div class="module" data-aos="fade-left">
+                    <div class="module-number">04</div>
+                    <div class="module-content">
+                        <h3>Backend & APIs</h3>
+                        <p>Node.js, Express, MongoDB, Autenticación</p>
+                        <ul>
+                            <li>Servidor con Node.js y Express</li>
+                            <li>Base de datos MongoDB</li>
+                            <li>APIs RESTful</li>
+                            <li>Autenticación JWT</li>
+                        </ul>
+                        <span class="module-duration">8 semanas</span>
+                    </div>
+                </div>
+                <div class="module" data-aos="fade-right">
+                    <div class="module-number">05</div>
+                    <div class="module-content">
+                        <h3>Proyecto Final</h3>
+                        <p>Aplicación completa de e-commerce</p>
+                        <ul>
+                            <li>Planificación y arquitectura</li>
+                            <li>Frontend con React</li>
+                            <li>Backend con Node.js</li>
+                            <li>Despliegue profesional</li>
+                        </ul>
+                        <span class="module-duration">4 semanas</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="testimonials" id="testimonios">
+        <div class="container">
+            <div class="section-header">
+                <h2>Lo que dicen nuestros estudiantes</h2>
+                <p>Historias reales de éxito de nuestros graduados</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-aos="zoom-in">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Conseguí mi primer trabajo como desarrollador junior 3 meses después de terminar el curso. La metodología es excelente y el apoyo constante."</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop" alt="María González">
+                        <div>
+                            <strong>María González</strong>
+                            <span>Frontend Developer en TechCorp</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-aos="zoom-in" data-delay="100">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"El curso me cambió la vida. Pasé de trabajar en retail a ser desarrollador fullstack con un salario 3x mayor. Totalmente recomendado."</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop" alt="Carlos Ramírez">
+                        <div>
+                            <strong>Carlos Ramírez</strong>
+                            <span>Fullstack Developer en StartupXYZ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-aos="zoom-in" data-delay="200">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"La mejor inversión que he hecho. Los proyectos son muy prácticos y realmente te preparan para el mundo real del desarrollo web."</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.pexels.com/photos/762020/pexels-photo-762020.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop" alt="Ana López">
+                        <div>
+                            <strong>Ana López</strong>
+                            <span>React Developer en DigitalAgency</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instructor -->
+    <section class="instructor">
+        <div class="container">
+            <div class="instructor-content">
+                <div class="instructor-image" data-aos="fade-right">
+                    <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop" alt="Instructor">
+                    <div class="instructor-badge">
+                        <i class="fas fa-award"></i>
+                        <span>+10 años experiencia</span>
+                    </div>
+                </div>
+                <div class="instructor-info" data-aos="fade-left">
+                    <h2>Conoce a tu Instructor</h2>
+                    <h3>Alex Martínez</h3>
+                    <p class="instructor-title">Senior Fullstack Developer & Tech Lead</p>
+                    <p>Con más de 10 años de experiencia en desarrollo web, Alex ha trabajado en empresas como Google, Netflix y Meta. Ha entrenado a más de 5,000 desarrolladores y es reconocido por su metodología práctica y resultados comprobados.</p>
+                    <div class="instructor-stats">
+                        <div class="stat">
+                            <strong>5,000+</strong>
+                            <span>Estudiantes entrenados</span>
+                        </div>
+                        <div class="stat">
+                            <strong>15+</strong>
+                            <span>Años programando</span>
+                        </div>
+                        <div class="stat">
+                            <strong>50+</strong>
+                            <span>Proyectos lanzados</span>
+                        </div>
+                    </div>
+                    <div class="instructor-certifications">
+                        <h4>Certificaciones:</h4>
+                        <ul>
+                            <li><i class="fab fa-aws"></i> AWS Certified Developer</li>
+                            <li><i class="fab fa-google"></i> Google Cloud Professional</li>
+                            <li><i class="fab fa-microsoft"></i> Microsoft Azure Expert</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Precios -->
+    <section class="pricing" id="precios">
+        <div class="container">
+            <div class="section-header">
+                <h2>Elige tu Plan</h2>
+                <p>Inversión en tu futuro profesional con garantía de satisfacción</p>
+            </div>
+            <div class="pricing-toggle">
+                <span class="toggle-label">Mensual</span>
+                <div class="toggle-switch" id="pricing-toggle">
+                    <div class="toggle-slider"></div>
+                </div>
+                <span class="toggle-label">Anual <span class="discount">-40%</span></span>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card" data-aos="fade-up">
+                    <div class="pricing-header">
+                        <h3>Básico</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount monthly-price">97</span>
+                            <span class="amount annual-price" style="display: none;">697</span>
+                            <span class="period monthly-period">/mes</span>
+                            <span class="period annual-period" style="display: none;">/año</span>
+                        </div>
+                        <p class="original-price annual-only" style="display: none;">Precio normal: $1,164</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Acceso al curso completo</li>
+                        <li><i class="fas fa-check"></i> 30+ horas de video</li>
+                        <li><i class="fas fa-check"></i> Proyectos prácticos</li>
+                        <li><i class="fas fa-check"></i> Certificado de finalización</li>
+                        <li><i class="fas fa-times"></i> Mentorías 1 a 1</li>
+                        <li><i class="fas fa-times"></i> Ayuda con búsqueda de empleo</li>
+                    </ul>
+                    <a href="#" class="pricing-btn btn-secondary">Comenzar Ahora</a>
+                </div>
+                <div class="pricing-card featured" data-aos="fade-up" data-delay="100">
+                    <div class="popular-badge">Más Popular</div>
+                    <div class="pricing-header">
+                        <h3>Pro</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount monthly-price">197</span>
+                            <span class="amount annual-price" style="display: none;">1,397</span>
+                            <span class="period monthly-period">/mes</span>
+                            <span class="period annual-period" style="display: none;">/año</span>
+                        </div>
+                        <p class="original-price annual-only" style="display: none;">Precio normal: $2,364</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Todo del plan Básico</li>
+                        <li><i class="fas fa-check"></i> 4 mentorías 1 a 1</li>
+                        <li><i class="fas fa-check"></i> Revisión de código personalizada</li>
+                        <li><i class="fas fa-check"></i> Preparación para entrevistas</li>
+                        <li><i class="fas fa-check"></i> Acceso a comunidad exclusiva</li>
+                        <li><i class="fas fa-check"></i> Soporte prioritario</li>
+                    </ul>
+                    <a href="#" class="pricing-btn btn-primary">¡Inscríbete Ahora!</a>
+                </div>
+                <div class="pricing-card" data-aos="fade-up" data-delay="200">
+                    <div class="pricing-header">
+                        <h3>Premium</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount monthly-price">297</span>
+                            <span class="amount annual-price" style="display: none;">2,097</span>
+                            <span class="period monthly-period">/mes</span>
+                            <span class="period annual-period" style="display: none;">/año</span>
+                        </div>
+                        <p class="original-price annual-only" style="display: none;">Precio normal: $3,564</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Todo del plan Pro</li>
+                        <li><i class="fas fa-check"></i> Mentorías ilimitadas</li>
+                        <li><i class="fas fa-check"></i> Ayuda activa búsqueda empleo</li>
+                        <li><i class="fas fa-check"></i> Revisión de portafolio</li>
+                        <li><i class="fas fa-check"></i> Mock interviews</li>
+                        <li><i class="fas fa-check"></i> Garantía de empleo*</li>
+                    </ul>
+                    <a href="#" class="pricing-btn btn-secondary">Comenzar Ahora</a>
+                </div>
+            </div>
+            <p class="guarantee">
+                <i class="fas fa-shield-alt"></i>
+                30 días de garantía. Si no estás satisfecho, te devolvemos el 100% de tu dinero.
+            </p>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Preguntas Frecuentes</h2>
+                <p>Resolvemos las dudas más comunes sobre el curso</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item" data-aos="fade-up">
+                    <div class="faq-question">
+                        <h3>¿Necesito experiencia previa en programación?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No, el curso está diseñado para principiantes completos. Comenzamos desde lo más básico y avanzamos paso a paso hasta temas más complejos.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-delay="100">
+                    <div class="faq-question">
+                        <h3>¿Cuánto tiempo necesito dedicar por semana?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Recomendamos dedicar entre 10-15 horas por semana. El curso está diseñado para completarse en 6 meses con este ritmo de estudio.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-delay="200">
+                    <div class="faq-question">
+                        <h3>¿Qué incluye el certificado del curso?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Recibes un certificado digital verificable que puedes agregar a tu LinkedIn y CV. El certificado incluye las tecnologías aprendidas y las horas de estudio.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-delay="300">
+                    <div class="faq-question">
+                        <h3>¿Hay ayuda para conseguir empleo?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sí, en los planes Pro y Premium incluimos preparación para entrevistas, revisión de CV y portafolio, y conexiones con empresas que buscan desarrolladores junior.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-delay="400">
+                    <div class="faq-question">
+                        <h3>¿El contenido se actualiza regularmente?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutamente. Actualizamos el contenido cada 3 meses para incluir las últimas tendencias y mejores prácticas de la industria.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="final-cta">
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2>¿Listo para cambiar tu carrera?</h2>
+                <p>Únete a miles de estudiantes que ya han transformado su futuro profesional</p>
+                <div class="cta-stats">
+                    <div class="cta-stat">
+                        <strong>2,500+</strong>
+                        <span>Graduados exitosos</span>
+                    </div>
+                    <div class="cta-stat">
+                        <strong>85%</strong>
+                        <span>Consiguen empleo</span>
+                    </div>
+                    <div class="cta-stat">
+                        <strong>$55K+</strong>
+                        <span>Salario promedio</span>
+                    </div>
+                </div>
+                <a href="#precios" class="btn-primary btn-large">
+                    <i class="fas fa-rocket"></i>
+                    ¡Inscríbete Ahora!
+                </a>
+                <p class="cta-guarantee">
+                    <i class="fas fa-shield-alt"></i>
+                    Garantía de satisfacción de 30 días
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-code"></i>
+                        <span>FullStack Pro</span>
+                    </div>
+                    <p>Transformamos principiantes en desarrolladores fullstack profesionales.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Curso</h3>
+                    <ul>
+                        <li><a href="#curso">Temario</a></li>
+                        <li><a href="#beneficios">Beneficios</a></li>
+                        <li><a href="#testimonios">Testimonios</a></li>
+                        <li><a href="#precios">Precios</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Soporte</h3>
+                    <ul>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">Soporte Técnico</a></li>
+                        <li><a href="#">Comunidad</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Términos de Uso</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Política de Reembolso</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FullStack Pro. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
